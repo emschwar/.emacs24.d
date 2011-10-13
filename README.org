@@ -1,0 +1,6 @@
+#+Title:      Emacs Reboot
+#+AUTHOR:       Eric Schwartz
+#+EMAIL:        emschwar@ericschwartz.us
+
+* What's all this?
+  This is my start-from-scratch Emacs 24 configuration, based on https://github.com/avdi/.emacs24.d
