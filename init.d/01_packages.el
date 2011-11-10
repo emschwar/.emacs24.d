@@ -3,9 +3,8 @@
 ;; package loading stuff
 (package-initialize)
 (setq ems-required-packages
-      (list 'xml-rpc 'magit 'gh 'textmate 'inf-ruby 'yaml-mode 'scss-mode 'ruby-compilation 'feature-mode))
+      (list 'xml-rpc 'magit 'gh 'textmate 'inf-ruby 'yaml-mode 'scss-mode 'ruby-compilation 'feature-mode 'coffee-mode))
 (dolist (package ems-required-packages)
   (when (not (package-installed-p package))
     (package-refresh-contents)
     (package-install package)))
-
