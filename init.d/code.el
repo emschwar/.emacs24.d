@@ -2,4 +2,11 @@
 (add-hook 'ems-code-modes-hook
 	  (lambda ()
             (linum-mode 1)
+            (column-mode)
             (textmate-mode)))
+
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.js\\$" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.js\\.erb$" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.rake\\$". ruby-mode))
