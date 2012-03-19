@@ -2,7 +2,7 @@
 (add-hook 'ems-code-modes-hook
 	  (lambda ()
             (linum-mode 1)
-            (column-mode)
+            (column-number-mode)
             (textmate-mode)))
 
 (require 'yaml-mode)
