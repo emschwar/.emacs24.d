@@ -3,10 +3,13 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(coffee-tab-width 2)
  '(custom-enabled-themes (quote (wheatgrass)))
  '(ido-enable-flex-matching t)
  '(ido-mode (quote both) nil (ido))
  '(js-indent-level 2)
+ '(js2-basic-offset 2)
+ '(js2-bounce-indent-p t)
  '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/") ("marmalade" . "http://marmalade-repo.org/packages/") ("Tromey" . "http://tromey.com/elpa/"))))
  '(scss-sass-command "bundle exec sass"))
 (custom-set-faces
