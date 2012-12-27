@@ -8,24 +8,24 @@
 ;;;;;;  (20118 28401))
 ;;; Generated autoloads from ../elisp/external/rvm.el/rvm.el
 
-(autoload 'rvm-use-default "~/.emacs24/elisp/external/rvm.el/rvm" "\
+(autoload 'rvm-use-default "~/.emacs24.d/elisp/external/rvm.el/rvm" "\
 use the rvm-default ruby as the current ruby version
 
 \(fn)" t nil)
 
-(autoload 'rvm-activate-corresponding-ruby "~/.emacs24/elisp/external/rvm.el/rvm" "\
+(autoload 'rvm-activate-corresponding-ruby "~/.emacs24.d/elisp/external/rvm.el/rvm" "\
 activate the corresponding ruby version for the file in the current buffer.
 This function searches for an .rvmrc file and activates the configured ruby.
 If no .rvmrc file is found, the default ruby is used insted.
 
 \(fn)" t nil)
 
-(autoload 'rvm-use "~/.emacs24/elisp/external/rvm.el/rvm" "\
+(autoload 'rvm-use "~/.emacs24.d/elisp/external/rvm.el/rvm" "\
 switch the current ruby version to any ruby, which is installed with rvm
 
 \(fn NEW-RUBY NEW-GEMSET)" t nil)
 
-(autoload 'rvm-open-gem "~/.emacs24/elisp/external/rvm.el/rvm" "\
+(autoload 'rvm-open-gem "~/.emacs24.d/elisp/external/rvm.el/rvm" "\
 
 
 \(fn GEMHOME)" t nil)
