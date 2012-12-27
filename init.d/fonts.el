@@ -1,6 +1,6 @@
-(set-default-font "Menlo-16")
+(set-default-font "Source Code Pro-22")
 (defun fontify-frame (frame)
-  (set-frame-parameter frame 'font "Menlo-16"))
+  (set-frame-parameter frame 'font "Source Code Pro-22"))
 
 ;; Fontify current frame
 (fontify-frame nil)
