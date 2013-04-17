@@ -11,3 +11,5 @@
 (add-to-list 'auto-mode-alist '("\\.js\\.erb$" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.rake\\$". ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.coffee\\$". coffee-mode))
+(add-to-list 'auto-mode-alist '("\\.erl\\$". erlang-mode))
+(add-to-list 'auto-mode-alist '("\\.proto\\$". protobuf-mode))
