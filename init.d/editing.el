@@ -2,6 +2,7 @@
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (setq-default indent-tabs-mode nil)
+(delete-selection-mode t)
 
 (setq frame-title-format
   '((buffer-file-name "%f" (dired-directory dired-directory "%b")) " - "
