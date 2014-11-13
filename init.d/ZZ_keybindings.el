@@ -8,3 +8,5 @@
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
 (global-set-key (kbd "C-c m") 'branch-commit-msg)
+
+(global-set-key (kbd "C-S-t") 'transpose-lines)

@@ -4,6 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(coffee-tab-width 2)
+ '(column-number-mode t)
  '(custom-enabled-themes (quote (wheatgrass)))
  '(ido-enable-flex-matching t)
  '(ido-mode (quote both) nil (ido))
