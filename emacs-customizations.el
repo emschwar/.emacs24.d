@@ -28,7 +28,7 @@
      ("Tromey" . "http://tromey.com/elpa/"))))
  '(package-selected-packages
    (quote
-    (kotlin-mode rubocop string-inflection json-reformat move-line sql-indent go-autocomplete go-direx golint go-mode handlebars-mode elixir-mode neotree dirtree multi-term bm git-gutter-fringe haskell-mode quack multiple-cursors rust-mode protobuf-mode erlang color-theme-sanityinc-tomorrow gist markdown-mode rinari wrap-region mode-compile rspec-mode yasnippet js2-mode coffee-mode feature-mode ruby-compilation scss-mode yaml-mode inf-ruby textmate gh magit xml-rpc)))
+    (ctmpl-mode jq-format jq-mode scala-mode groovy-mode rainbow-delimiters org prettier-js prettier-emacs prettier dockerfile-mode jdee tidy eslint-fix kotlin-mode rubocop string-inflection json-reformat move-line sql-indent go-autocomplete go-direx golint go-mode handlebars-mode elixir-mode neotree dirtree multi-term bm git-gutter-fringe haskell-mode quack multiple-cursors rust-mode protobuf-mode erlang color-theme-sanityinc-tomorrow gist markdown-mode rinari wrap-region mode-compile rspec-mode yasnippet js2-mode coffee-mode feature-mode ruby-compilation scss-mode yaml-mode inf-ruby textmate gh magit xml-rpc)))
  '(safe-local-variable-values (quote ((encoding . utf-8))))
  '(scss-sass-command "bundle exec sass")
  '(vc-annotate-background nil)
@@ -58,4 +58,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:family "Source Code Pro" :foundry "ADBO" :slant normal :weight normal :height 263 :width normal)))))

@@ -8,8 +8,6 @@
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.yml.example$" . yaml-mode))
-(add-to-list 'auto-mode-alist '("\\.js\\$" . js2-mode))
-(add-to-list 'auto-mode-alist '("\\.js\\.erb$" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.rake$". ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile". ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.coffee$". coffee-mode))
@@ -19,6 +17,7 @@
 (add-to-list 'auto-mode-alist '("\\.md$". markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.ex$". elixir-mode))
 (add-to-list 'auto-mode-alist '("\\.go$". go-mode))
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
 (require 'yasnippet)
 (yas/global-mode 1)
@@ -104,3 +103,24 @@ With numeric prefix arg DEC, decrement the integer by DEC amount."
 
 (global-set-key (kbd "C-c +") 'increment-integer-at-point)
 (global-set-key (kbd "C-c -") 'decrement-integer-at-point)
+
+(eval-after-load 'js2-mode
+  '(add-hook 'js2-mode-hook (lambda () (add-hook 'after-save-hook 'eslint-fix nil t))))
+
+(eval-after-load 'js-mode
+  '(add-hook 'js-mode-hook (lambda () (add-hook 'after-save-hook 'eslint-fix nil t))))
+
+
+(add-hook 'ruby-mode-hook
+  (lambda () (hs-minor-mode)))
+
+(eval-after-load "hideshow"
+  '(add-to-list 'hs-special-modes-alist
+    `(ruby-mode
+      ,(rx (or "def" "class" "module" "do" "{" "[")) ; Block start
+      ,(rx (or "}" "]" "end"))                       ; Block end
+      ,(rx (or "#" "=begin"))                        ; Comment start
+      ruby-forward-sexp nil)))
+
+(global-set-key (kbd "C-c h") 'hs-hide-block)
+(global-set-key (kbd "C-c s") 'hs-show-block)
